@@ -1,0 +1,23 @@
+{
+    "name": "whsuite/composer-installer",
+    "type": "composer-plugin",
+    "description": "Custom Composer installer for WHSuite Addons",
+    "license": "Private",
+    "authors": [
+        {
+            "name": "WHSuite",
+            "email": "info@whsuite.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Whsuite\\Composer\\" : "src"
+        }
+    },
+    "extra": {
+        "class": "Whsuite\\Composer\\AddonInstallerPlugin"
+    },
+    "require": {
+        "composer-plugin-api": "1.*"
+    }
+}
